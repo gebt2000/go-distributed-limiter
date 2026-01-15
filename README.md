@@ -2,7 +2,7 @@
 
 A high-performance, distributed rate limiter built in Go. It uses **Redis Lua scripts** to ensure atomicity and prevent race conditions in concurrent environments.
 
-## 🚀 Key Features
+## Key Features
 * **Distributed State:** Uses Redis as the backend, allowing multiple API instances to share the same rate limits.
 * **Atomic Operations:** Implements the "Fixed Window" algorithm via custom Lua scripts to guarantee thread safety.
 * **Concurrency Safe:** Proven to handle concurrent requests without "leaking" excess traffic.
@@ -14,7 +14,7 @@ A high-performance, distributed rate limiter built in Go. It uses **Redis Lua sc
 * **Containerization:** Docker & Docker Compose
 * **Testing:** Custom concurrent load generator
 
-## ⚡️ How to Run
+## How to Run
 1. **Start Redis:**
    ```bash
    docker-compose up -d
@@ -31,7 +31,7 @@ A high-performance, distributed rate limiter built in Go. It uses **Redis Lua sc
    go run load_test/attack.go
    ```
 
-## 📊 Performance Proof
+## Performance Proof
 Load test results simulating 20 concurrent requests (Limit: 5/10s):
 
 ```text
