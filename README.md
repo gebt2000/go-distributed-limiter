@@ -8,7 +8,7 @@ A high-performance, distributed rate limiter built in Go. It uses **Redis Lua sc
 * **Concurrency Safe:** Proven to handle concurrent requests without "leaking" excess traffic.
 * **Dockerized:** Ready to run with a single command.
 
-## 🛠 Tech Stack
+## Tech Stack
 * **Language:** Go (Golang)
 * **Database:** Redis (Alpine)
 * **Containerization:** Docker & Docker Compose
